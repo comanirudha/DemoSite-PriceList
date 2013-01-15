@@ -152,7 +152,9 @@
     <bean id="blSolrSearchServiceExtensionManager" class="org.broadleafcommerce.core.search.service.solr.SolrSearchServiceExtensionManager">
         <property name="listeners">
             <list>
-                <bean class="com.broadleafcommerce.pricelist.extension.PriceListSolrSearchServiceExtensionListener" />
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListSolrSearchServiceExtensionListener">
+                    <property name="indexPriceLists" value="true" />
+                </bean>
             </list>
         </property>
     </bean>
