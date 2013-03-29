@@ -29,9 +29,9 @@
         <sec:filter-chain-map request-matcher="ant">
             <sec:filter-chain pattern="/**" filters="
                blURLHandlerFilter,
-               blCartStateFilter,
                blRulesPriceListRequestFilter,
-               blPriceListDynamicSkuPricingFilter"/>
+               blPriceListDynamicSkuPricingFilter,
+               blCartStateFilter"/>
         </sec:filter-chain-map>
     </bean>
 
