@@ -79,4 +79,11 @@
         overflowToDisk="true"
         timeToLiveSeconds="1"/>
         
+    <cache
+        name="blPriceListCache"
+        maxElementsInMemory="1"
+        eternal="false"
+        overflowToDisk="false"
+        timeToLiveSeconds="1"/>
+        
 </ehcache>
